@@ -1,0 +1,79 @@
+
+:root {
+    --color-uvic-vermell: #cf0a2c; 
+    --color-text-fosc: #333;
+    --color-fons-clar: #f0f0f0;
+    --ample-maxim-contingut: 1000px; 
+}
+
+main {
+    max-width: var(--ample-maxim-contingut);
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 80vh; 
+}
+
+
+.titol-seccio {
+    text-align: center;
+    color: var(--color-uvic-vermell);
+    font-size: 2.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+
+    border-bottom: 2px solid var(--color-fons-clar); 
+    padding-bottom: 20px;
+}
+
+.contingut-eurobot {
+    display: block; 
+    overflow: hidden; 
+}
+
+.imatge-lateral {
+    float: right; 
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 450px; 
+    max-width: 100%; 
+    text-align: center; 
+}
+
+.imatge-lateral img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.contingut-eurobot p {
+    font-size: 1.05em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.titol-tema {
+    text-align: center; 
+    font-size: 2.8em; 
+    color: #000;      
+    text-transform: uppercase;
+    font-weight: 400; 
+    margin: 40px 0;   
+    line-height: 1.1;
+}
+
+@media (max-width: 800px) {
+    .imatge-lateral {
+        float: none;
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+    
+    .titol-tema {
+        font-size: 2.2em;
+    }
+}

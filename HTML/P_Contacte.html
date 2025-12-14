@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte - Garrins Metàl·lics</title>
+    
+    <link rel="stylesheet" href="../style_capcelera_nav.css">
+    <link rel="stylesheet" href="../style_footer.css">
+    
+    <link rel="stylesheet" href="../style_main/style_main_P_Contacte.css"> 
+</head>
+<body>
+    <div class="banner-uvic">
+        <div class="banner-container">
+            <img src="../IMG/logo-uvic.png" alt="Banner UVic">
+        </div>
+    </div>
+    <header>
+        <div class="contenidor-header">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../IMG/LOGO GARRINS.png" alt="Logo Garrins Metàl·lics">
+                </a>
+            </div>
+
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icona">
+                <img src="../IMG/Hamburger_icon.svg.png" alt="Menú Desplegable" style="width: 30px; height: auto;">
+            </label>
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="P_Equip.html">Equip 2025-2026</a></li>
+                    <li><a href="P_Robots.html">Robots</a></li>
+                    <li><a href="P_Eurobot.html">Eurobot</a></li>
+                    <li><a href="P_MecatronicChallenge.html">Mecatronic Challenge</a></li>
+                    <li><a href="P_Interectuar2.html">Interact</a></li>
+                    <li><a href="P_Patrocinadors.html">Patrocinadors</a></li>
+                    <li><a href="P_Contacte.html">Contacte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="titol-seccio">CONTACTE</h1>
+        <p class="text-intro">
+            Aquí pots trobar les nostres dades de contacte i xarxes socials. Just a continuació hi ha un formulari per conèixer les persones interessades a formar part de l'equip Garrins Metàl·lics.
+        </p>
+
+        <h1 class="titol-pagina">Contacte</h1>
+
+        <form action="#" method="post" class="form-contacte">
+            
+            <div class="fila-form">
+                <div class="camp">
+                    <label for="nom">Nom <span class="obligatori">(Obligatori)</span></label>
+                    <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                </div>
+                <div class="camp">
+                    <label for="cognoms">Cognoms</label>
+                    <input type="text" id="cognoms" name="cognoms" placeholder="">
+                </div>
+            </div>
+
+            <div class="fila-form">
+                <div class="camp">
+                    <label for="email">Correu electrònic <span class="obligatori">(Obligatori)</span></label>
+                    <input type="email" id="email" name="email" placeholder="Introdueix correu electrònic" required>
+                </div>
+                <div class="camp">
+                    <label for="email-confirm">Confirma el correu electrònic</label>
+                    <input type="email" id="email-confirm" name="email-confirm" placeholder="">
+                </div>
+            </div>
+
+            <div class="camp">
+                <label for="comentaris">Comentaris <span class="obligatori">(Obligatori)</span></label>
+                <textarea id="comentaris" name="comentaris" rows="8" required></textarea>
+                <span class="contador">0 de 600 màxim de caràcters</span>
+            </div>
+
+            <button type="submit" class="boto-envia">Envia</button>
+        </form>
+
+        <div class="info-extra">
+            
+            <div class="columna-dades">
+                <h3>Dades de Contacte</h3>
+                
+                <div class="item-dada">
+                    <img src="../IMG/Contacte/icon-location.png" alt="Ubicació" class="icona-dada"> 
+                    <p>
+                        Edifici Torre dels Frares, Carrer de la Laura, 13,<br>
+                        08500 Vic
+                    </p>
+                </div>
+
+                <div class="item-dada">
+                    <img src="../IMG/Contacte/icon-mail.png" alt="Email" class="icona-dada">
+                    <p>garrinsmetalics@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="columna-xarxes">
+                <h3>Segueix-nos i no et perdis res!</h3>
+                <div class="icones-socials-vermelles">
+                    <a href="https://x.com/Garrinsmetalics"><img src="../IMG/Contacte/x-twitter-black-isolated-logo-5694253.png" alt="X"></a>
+                    <a href="https://www.instagram.com/garrinsmetalics/"><img src="../IMG/Contacte/icon-instagram.png" alt="Instagram"></a>
+                    <a href="https://es.linkedin.com/company/garrins-met%C3%A0l%C2%B7lics"><img src="../IMG/Contacte/linkedin.webp" alt="LinkedIn"></a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Garrins Metàl·lics - Universitat de Vic - UCC</p>
+    </footer>
+</body>
+</html>

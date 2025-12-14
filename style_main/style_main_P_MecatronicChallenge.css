@@ -1,0 +1,144 @@
+
+:root {
+    --color-uvic-vermell: #cf0a2c; 
+    --color-text-fosc: #333;
+    --color-fons-clar: #f0f0f0;
+    --ample-maxim-contingut: 1000px; 
+}
+
+main {
+    max-width: var(--ample-maxim-contingut);
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 80vh; 
+}
+
+.titol-seccio {
+    text-align: center;
+    color: var(--color-uvic-vermell);
+    font-size: 2.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--color-fons-clar);
+    padding-bottom: 20px;
+}
+
+.contingut-text p {
+    font-size: 1.05em;
+    line-height: 1.8; 
+    color: #555;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.contenidor-boto {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 70px 0; 
+}
+
+.boto-vermell {
+    display: inline-block;
+    background-color: var(--color-uvic-vermell);
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 50px; 
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.boto-vermell:hover {
+    background-color: #a0001e; 
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+
+.acordio-imatges {
+    display: flex;
+    width: 100%;
+    height: 400px; 
+    gap: 10px;     
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.panel {
+    flex: 1; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: flex 0.7s cubic-bezier(0.25, 1, 0.5, 1); 
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.panel::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    opacity: 0;
+    transition: opacity 0.5s;
+    border-radius: 10px;
+}
+
+.panel h3 {
+    color: white;
+    font-size: 1.5em;
+    opacity: 0; 
+    z-index: 2;
+    transition: opacity 0.4s ease 0.2s; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.panel:hover {
+    flex: 5; 
+}
+
+
+.panel:hover::before {
+    opacity: 1;
+}
+
+.panel:hover h3 {
+    opacity: 1;
+}
+
+
+@media (max-width: 700px) {
+    .acordio-imatges {
+        flex-direction: column; 
+        height: 600px;
+    }
+    
+    .panel:hover {
+        flex: 3; 
+    }
+    
+    .panel h3 {
+        opacity: 1; 
+        font-size: 1.2em;
+    }
+    
+    .panel::before {
+        opacity: 0.5;
+    }
+}

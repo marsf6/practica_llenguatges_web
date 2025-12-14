@@ -1,0 +1,154 @@
+:root {
+    --color-uvic-vermell: #cf0a2c; 
+    --color-text-fosc: #333;
+    --color-fons-clar: #f0f0f0;
+    --ample-maxim-contingut: 1000px; 
+}
+
+main {
+    max-width: var(--ample-maxim-contingut);
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 80vh; 
+}
+
+
+.titol-seccio {
+    text-align: center;
+    
+    color: var(--color-uvic-vermell); 
+    
+    font-size: 2.5em;
+    font-weight: 800; 
+    text-transform: uppercase; 
+    
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    
+    border-bottom: 2px solid var(--color-fons-clar); 
+    padding-bottom: 20px;
+}
+
+.intro-text {
+    text-align: center;
+    color: #666;
+    margin-bottom: 60px;
+    font-size: 1.1em;
+}
+
+.robots-list {
+    display: flex;
+    flex-direction: column;
+    gap: 80px; 
+}
+
+.robot-item {
+    display: flex;
+    align-items: center; 
+    gap: 50px; 
+}
+
+.robot-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+
+.robot-info {
+    flex: 1; 
+}
+
+.header-robot {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd; 
+    padding-bottom: 10px;
+}
+
+.header-robot h2 {
+    font-size: 1.4em;
+    color: var(--color-text-fosc);
+    font-weight: bold;
+    margin: 0;
+}
+
+.header-robot .any {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--color-text-fosc);
+}
+
+.robot-info p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+
+.robot-img {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+}
+
+.robot-img img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
+
+.galeria-robots {
+    margin-top: 100px;
+}
+
+.titol-galeria {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: var(--color-text-fosc);
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.grid-galeria img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; 
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.grid-galeria img:hover {
+    transform: scale(1.03); 
+    cursor: pointer;
+}
+
+
+@media (max-width: 800px) {
+    .robot-item, 
+    .robot-item:nth-child(even) {
+        flex-direction: column; 
+    }
+
+    .robot-info, .robot-img {
+        width: 100%;
+    }
+
+    .robot-img img {
+        max-width: 100%;
+    }
+
+    .header-robot {
+        flex-direction: row; 
+    }
+}

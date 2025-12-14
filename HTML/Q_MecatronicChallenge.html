@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripció MeCATronic - Garrins Metàl·lics</title>
+    
+    <link rel="stylesheet" href="../style_capcelera_nav.css">
+    <link rel="stylesheet" href="../style_footer.css">
+    
+    <link rel="stylesheet" href="../style_main/style_main_Q_MecatronicChallenge.css"> 
+</head>
+<body>
+    <div class="banner-uvic">
+        <div class="banner-container">
+            <img src="../IMG/logo-uvic.png" alt="Banner UVic">
+        </div>
+    </div>
+
+    <header>
+        <div class="contenidor-header">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../IMG/LOGO GARRINS.png" alt="Logo Garrins Metàl·lics">
+                </a>
+            </div>
+
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icona">
+                <img src="../IMG/Hamburger_icon.svg.png" alt="Menú Desplegable" style="width: 30px; height: auto;">
+            </label>
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="P_Equip.html">Equip 2025-2026</a></li>
+                    <li><a href="P_Robots.html">Robots</a></li>
+                    <li><a href="P_Eurobot.html">Eurobot</a></li>
+                    <li><a href="P_MecatronicChallenge.html">Megatronic Challenge</a></li>
+                    <li><a href="P_Interectuar2.html">Interact</a></li>
+                    <li><a href="P_Patrocinadors.html">Patrocinadors</a></li>
+                    <li><a href="P_Contacte.html">Contacte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="titol-pagina">MeCATronic Challenge</h1>
+
+        <form action="#" method="post" class="formulari-inscripcio">
+            
+            <div class="grup-form consentiment">
+                <label class="label-principal">Consentiment d'ús d'imatge i dades <span class="obligatori">(Obligatori)</span></label>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="consentiment" name="consentiment" required>
+                    <label for="consentiment" class="text-legal">
+                        Dono el meu consentiment per a la captació i utilització de la meva imatge i dades personals per part de la Universitat de Vic – Universitat Central de Catalunya (UVic-UCC) i l'equip Garrins Metàl·lics, en activitats de difusió, comunicació i promoció relacionades amb els seus projectes. La gestió es farà d'acord amb la normativa vigent de protecció de dades (RGPD i LOPDGDD).
+                    </label>
+                </div>
+            </div>
+
+            <div class="grup-form">
+                <label for="nom-equip" class="label-principal">Nom de l'equip <span class="obligatori">(Obligatori)</span></label>
+                <input type="text" id="nom-equip" name="nom-equip" placeholder="Nom" required>
+            </div>
+
+            <div class="grup-form">
+                <label class="label-principal">Nom del membre de l'equip <span class="obligatori">(Obligatori)</span></label>
+                <div class="dues-columnes">
+                    <div class="sub-camp">
+                        <input type="text" id="nom-membre" name="nom-membre" placeholder="Nom" required>
+                        <span class="sub-label">Nom</span>
+                    </div>
+                    <div class="sub-camp">
+                        <input type="text" id="cognoms-membre" name="cognoms-membre" placeholder="Cognoms" required>
+                        <span class="sub-label">Cognoms</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grup-form">
+                <label class="label-principal">Correu electrònic <span class="obligatori">(Obligatori)</span></label>
+                <div class="dues-columnes">
+                    <div class="sub-camp">
+                        <input type="email" id="email" name="email" placeholder="Introdueix correu electrònic" required>
+                        <span class="sub-label">Introdueix correu electrònic</span>
+                    </div>
+                    <div class="sub-camp">
+                        <input type="email" id="email-confirm" name="email-confirm" placeholder="Confirma el correu electrònic" required>
+                        <span class="sub-label">Confirma el correu electrònic</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grup-form">
+                <label for="data-naixement" class="label-principal">Data de naixement <span class="obligatori">(Obligatori)</span></label>
+                <input type="date" id="data-naixement" name="data-naixement" required>
+                <span class="sub-label">DD/MM/YYYY</span>
+            </div>
+
+            <div class="grup-form">
+                <label for="dni" class="label-principal">DNI <span class="obligatori">(Obligatori)</span></label>
+                <input type="text" id="dni" name="dni" placeholder="DNI" required>
+            </div>
+
+            <div class="grup-form">
+                <label for="comentaris" class="label-principal">Comentaris</label>
+                <textarea id="comentaris" name="comentaris" rows="6"></textarea>
+            </div>
+
+            <p class="text-informatiu">
+                Feu-nos saber qualsevol comentari o dubte sobre la participació a la Mechatronic Challenge. Durant tota la Mecathronic Challenge, la Universitat de Vic – Universitat Central de Catalunya (UVic-UCC) proporcionarà beguda i menjar a tots els participants. En cas de presentar alguna al·lèrgia, intolerància o requeriment alimentari específic, us demanem que ho indiqueu a la casella de comentaris del formulari, a fi de poder garantir una atenció adequada a les vostres necessitats.
+            </p>
+
+            <button type="submit" class="boto-envia">Envia</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Garrins Metàl·lics - Universitat de Vic - UCC</p>
+    </footer>
+</body>
+</html>

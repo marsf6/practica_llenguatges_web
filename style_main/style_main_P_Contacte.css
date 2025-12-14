@@ -1,0 +1,231 @@
+
+:root {
+    --color-uvic-vermell: #cf0a2c;
+    --color-text-fosc: #333;
+    --color-gris-clar: #ccc;
+    --ample-maxim-contingut: 1000px; 
+}
+
+main {
+    max-width: var(--ample-maxim-contingut);
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 80vh;
+}
+
+
+.titol-seccio {
+    text-align: center;
+    color: var(--color-uvic-vermell);
+    font-size: 2.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--color-fons-clar);
+    padding-bottom: 20px;
+}
+
+
+.text-intro {
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    text-align: center; 
+    max-width: 800px;   
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.titol-pagina {
+    font-size: 2.5em;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+
+.form-contacte {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 80px; 
+}
+
+.fila-form {
+    display: flex;
+    gap: 30px; 
+}
+
+.camp {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+}
+
+
+label {
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.obligatori {
+    color: #cc0000;
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 12px;
+    border: 1px solid var(--color-gris-clar);
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #fff;
+    width: 100%; 
+    font-family: inherit;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #666;
+}
+
+
+.contador {
+    font-size: 0.85em;
+    color: #777;
+    margin-top: 5px;
+}
+
+
+.boto-envia {
+    background-color: var(--color-uvic-vermell);
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start; 
+    transition: background-color 0.3s;
+}
+
+.boto-envia:hover {
+    background-color: rgb(149, 17, 44); 
+}
+
+
+.info-extra {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    padding-top: 40px;
+    border-top: 1px solid #eee;
+}
+
+
+.info-extra {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    padding-top: 40px;
+    border-top: 1px solid #eee; 
+    margin-bottom: 40px;
+}
+
+.info-extra h3 {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+
+.columna-dades {
+    flex: 1;
+}
+
+.item-dada {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.icona-dada {
+    width: 25px;       
+    height: 25px;      
+    object-fit: contain; 
+    
+    filter: brightness(0) invert(13%) sepia(90%) saturate(6144%) hue-rotate(345deg) brightness(98%) contrast(94%);
+}
+
+.item-dada p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+    font-size: 0.95em;
+}
+
+.columna-xarxes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    text-align: right;
+}
+
+.icones-socials-vermelles {
+    display: flex;
+    gap: 15px; 
+    justify-content: flex-end;
+}
+
+.icones-socials-vermelles a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; 
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.icones-socials-vermelles img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain; 
+    filter: brightness(0) invert(13%) sepia(90%) saturate(6144%) hue-rotate(345deg) brightness(98%) contrast(94%);
+    
+    transition: all 0.3s ease;
+}
+
+.icones-socials-vermelles a:hover {
+    transform: scale(1.15); 
+}
+
+
+@media (max-width: 768px) {
+    .info-extra {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .columna-xarxes {
+        align-items: flex-start; 
+        text-align: left;
+        width: 100%;
+    }
+    
+    .icones-socials-vermelles {
+        justify-content: flex-start;
+    }
+}

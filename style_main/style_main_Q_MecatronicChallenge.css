@@ -1,0 +1,137 @@
+:root {
+    --color-uvic-vermell: #cf0a2c;
+    --color-text-fosc: #333;
+    --color-fons-clar: #f0f0f0;  
+}
+
+main {
+    max-width: 900px; 
+    
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 80vh;
+}
+
+
+.titol-pagina {
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 500; 
+    margin-bottom: 50px;
+    color: #000;
+}
+
+.formulari-inscripcio {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+.grup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.label-principal {
+    font-weight: bold;
+    font-size: 0.95em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.obligatori {
+    color: #cc0000; 
+    font-weight: normal;
+    font-size: 0.85em;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    font-size: 1em;
+    background-color: #fcfcfc;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #666;
+    outline: none;
+    background-color: #fff;
+}
+
+.sub-label {
+    font-size: 0.75em;
+    color: #666;
+    margin-top: 4px;
+    display: block;
+}
+
+
+.dues-columnes {
+    display: flex;
+    gap: 20px;
+}
+
+.sub-camp {
+    flex: 1; 
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: flex-start; 
+    gap: 10px;
+}
+
+input[type="checkbox"] {
+    margin-top: 5px; 
+    transform: scale(1.2); 
+}
+
+.text-legal {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+.text-informatiu {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.5;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.boto-envia {
+    background-color: var(--color-uvic-vermell);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start; 
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.boto-envia:hover {
+    background-color: rgb(149, 17, 44); 
+}
+
+@media (max-width: 600px) {
+    .dues-columnes {
+        flex-direction: column; 
+        gap: 15px;
+    }
+}

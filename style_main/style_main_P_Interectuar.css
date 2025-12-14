@@ -1,0 +1,50 @@
+
+main {
+    max-width: var(--ample-maxim-contingut);
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 80vh; 
+}
+
+.titol-seccio {
+    text-align: center;
+    color: var(--color-uvic-vermell);
+    font-size: 2.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--color-fons-clar);
+    padding-bottom: 20px;
+}
+
+.text-intro {
+    text-align: center;
+    color: #555;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+}
+
+
+.robot-wrapper {
+    width: 100%;
+ 
+    height: 700px; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #ffffff; 
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+    overflow: hidden; 
+}
+
+
+@media (max-width: 600px) {
+    .robot-wrapper {
+        height: 500px; 
+    }
+}
